@@ -1,0 +1,15 @@
+
+yarn add typescript -D
+
+yarn add -D @types/express
+
+yarn tsc --init
+
+yarn tsc
+
+node .\src\index.js
+
+//tsc e nodemon
+yarn add ts-node-dev -D
+
+yarn dev:server
