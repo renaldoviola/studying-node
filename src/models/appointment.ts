@@ -3,7 +3,8 @@ import { Entity,
   PrimaryGeneratedColumn,
   CreateDateColumn,
   ManyToOne,
-  JoinColumn} from 'typeorm';
+  JoinColumn,
+  UpdateDateColumn} from 'typeorm';
 
 import User from './user';
 
@@ -25,7 +26,7 @@ class Appointment {
     @CreateDateColumn()
     create_at: Date;
 
-    @CreateDateColumn()
+    @UpdateDateColumn()
     updated_at: Date;
 
 }
